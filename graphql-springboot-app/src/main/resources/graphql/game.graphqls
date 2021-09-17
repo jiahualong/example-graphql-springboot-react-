@@ -1,0 +1,10 @@
+type Query {
+    games:[Game]
+    queryGameById(id: String!): Game
+}
+
+type Game{
+    id: String
+    name: String
+    imgUrl: String
+}
