@@ -8,3 +8,14 @@ type Game{
     name: String
     imgUrl: String
 }
+
+
+type Mutation {
+    createGame(input: GameInput!): Game
+}
+
+input GameInput{
+    id: String
+    name: String
+    imgUrl: String
+}
